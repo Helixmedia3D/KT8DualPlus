@@ -2,7 +2,7 @@
 Gebruik de onderstaande gcode in de KT8 Post-Postprocessor applicatie.
 
 Start Tool Gcode T0/T1:
-```python
+```C++
 T0
 G1 X-67 F6500 ; go to right parking lot
 G4 P250 ;dwell 250ms
