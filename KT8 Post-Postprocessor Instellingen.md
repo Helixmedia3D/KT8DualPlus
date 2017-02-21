@@ -11,7 +11,7 @@ G4 P400 ;dwell 400ms
 ```
 
 Toolswitch naar T0 (1730 Hotend)
-```javascript
+```AutoHotkey
 T0
 G1 X162 F6500 ; go to left parking lot
 G4 P250 ;dwell 250ms
