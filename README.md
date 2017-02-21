@@ -4,13 +4,13 @@ Deze repository bevat alle belangrijke bestanden benodigd voor de KT8 Dual+.
 ####KT08_DUAL+.ini
 Initialisatiebestand met printparameters voor Cura 15.04.6
 
-####KT8 Cura Gcode
+####KT8 Cura Gcode.md
 Cura 15.04.6 Start/End-GCode
 
-####KT8 Post-Postprocessor Instellingen
+####KT8 Post-Postprocessor Instellingen.md
 Instellingen voor KT8 Post-Postprocessor applicatie
 
-####KT8 Dual+ Hadleiding
+####KT8 Dual+ Hadleiding.pdf
 Hadleiding voor KT8 Dual+ 
 
 ####ATmega 2560 firmware
