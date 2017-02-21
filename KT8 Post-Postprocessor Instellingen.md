@@ -11,7 +11,7 @@ G4 P400 ;dwell 400ms
 ```
 
 Toolswitch naar T0 (1730 Hotend)
-```AutoHotkey
+```Assembly
 T0
 G1 X162 F6500 ; go to left parking lot
 G4 P250 ;dwell 250ms
@@ -24,7 +24,7 @@ G4 P400 ;dwell 400ms
 ```
 
 Toolswitch naar T1 (E3D Hotend)
-```javascript
+```Assembly
 G1 X-67 F6500 ; go to right parking lot
 G4 P250 ;dwell 250ms
 M42 P6 S255 ; electro magnet 1 off
