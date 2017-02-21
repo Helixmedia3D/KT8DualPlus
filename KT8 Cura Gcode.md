@@ -3,6 +3,13 @@ Gebruik de onderstaande gcode in 'Start/End-GCode' tab van Cura 15.04.6.
 
 #####start.gcode
 ```Assembly
+;Sliced at: {day} {date} {time}
+;Basic settings: Layer height: {layer_height} Walls: {wall_thickness} Fill: {fill_density}
+;Print time: {print_time}
+;Filament used: {filament_amount}m {filament_weight}g
+;Filament cost: {filament_cost}
+;M190 S{print_bed_temperature} 
+;M109 S{print_temperature} 
 G21
 G90
 M107
@@ -68,6 +75,13 @@ G90
 
 #####start2.gcode
 ```Assembly
+;Sliced at: {day} {date} {time}
+;Basic settings: Layer height: {layer_height} Walls: {wall_thickness} Fill: {fill_density}
+;Print time: {print_time}
+;Filament used: {filament_amount}m {filament_weight}g
+;Filament cost: {filament_cost}
+;M190 S{print_bed_temperature} 
+;M109 S{print_temperature} 
 G21
 G90
 M107
