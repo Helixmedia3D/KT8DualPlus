@@ -10,8 +10,8 @@ Cura 15.04.6 Start/End-GCode
 ####KT8 Post-Postprocessor Instellingen.md
 Instellingen voor KT8 Post-Postprocessor applicatie
 
-####KT8 Dual+ Hadleiding.pdf
-Hadleiding voor KT8 Dual+ 
+####KT8 Dual+ Handleiding.pdf
+Handleiding voor KT8 Dual+ 
 
 ####ATmega 2560 firmware
 Marlin RC8
