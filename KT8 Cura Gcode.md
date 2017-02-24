@@ -8,6 +8,7 @@ Gebruik de onderstaande gcode in 'Start/End-GCode' tab van Cura 15.04.6.
 ;Print time: {print_time}
 ;Filament used: {filament_amount}m {filament_weight}g
 ;Filament cost: {filament_cost}
+;CHAMBERTEMP
 ;M190 S{print_bed_temperature} 
 ;M109 S{print_temperature} 
 G21
@@ -32,7 +33,6 @@ G1 F200 E30
 G92 E0
 G1 F{travel_speed}
 M117 HEATING CHAMBER
-;CHAMBERTEMP
 ;OPWARMDWELL
 ;SPEED1730
 ;SPEEDE3D
@@ -80,6 +80,7 @@ G90
 ;Print time: {print_time}
 ;Filament used: {filament_amount}m {filament_weight}g
 ;Filament cost: {filament_cost}
+;CHAMBERTEMP
 ;M190 S{print_bed_temperature} 
 ;M109 S{print_temperature} 
 G21
@@ -104,7 +105,6 @@ G1 F200 E30
 G92 E0
 G1 F{travel_speed}
 M117 HEATING CHAMBER
-;CHAMBERTEMP
 ;OPWARMDWELL
 ;SPEED1730
 ;SPEEDE3D
