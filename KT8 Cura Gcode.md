@@ -41,7 +41,13 @@ M117 KT8 DUAL+ printing
 ```
 
 #####end.gcode
-```Assembly
+G91
+G1 E-1 F300
+G1 Z+0.5 E-5 X-20 Y-20 F{travel_speed}
+G28 X0 Y0
+G4 S5
+M84
+G90
 M104 T0 S0
 M104 T1 S0
 M117 PRINT KLAAR
@@ -49,12 +55,6 @@ M140 S0
 M42 P57 S0 ;fan 1730 off
 M42 P58 S0 ;fan e3d off
 M42 P5 S0 ;heated chamber off
-G91
-G1 E-1 F300
-G1 Z+0.5 E-5 X-20 Y-20 F{travel_speed}
-G28 X0 Y0
-M84
-G90
 ;{profile_string}
 ```
 
@@ -113,7 +113,13 @@ M117 KT8 DUAL+ printing
 ```
 
 #####end2.gcode
-```Assembly
+G91
+G1 E-1 F300
+G1 Z+0.5 E-5 X-20 Y-20 F{travel_speed}
+G28 X0 Y0
+G4 S5
+M84
+G90
 M104 T0 S0
 M104 T1 S0
 M117 PRINT KLAAR
@@ -121,11 +127,5 @@ M140 S0
 M42 P57 S0 ;fan 1730 off
 M42 P58 S0 ;fan e3d off
 M42 P5 S0 ;heated chamber off
-G91
-G1 E-1 F300
-G1 Z+0.5 E-5 X-20 Y-20 F{travel_speed}
-G28 X0 Y0
-M84
-G90
 ;{profile_string}
 ```
