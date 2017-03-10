@@ -226,8 +226,11 @@
 
 // Define a pin to turn case light on/off
 //#define CASE_LIGHT_PIN 4
-//#define CASE_LIGHT_DEFAULT_ON   // Uncomment to set default state to on
-//#define MENU_ITEM_CASE_LIGHT    // Uncomment to have a Case Light On / Off entry in main menu
+#if PIN_EXISTS(CASE_LIGHT)
+  #define INVERT_CASE_LIGHT false   // Set to true if HIGH is the OFF state (active low)
+  //#define CASE_LIGHT_DEFAULT_ON   // Uncomment to set default state to on
+  //#define MENU_ITEM_CASE_LIGHT    // Uncomment to have a Case Light On / Off entry in main menu
+#endif
 
 //===========================================================================
 //============================ Mechanical Settings ==========================
@@ -419,6 +422,9 @@
 // Include a page of printer information in the LCD Main Menu
 //#define LCD_INFO_MENU
 
+// On the Info Screen, display XY with one decimal place when possible
+//#define LCD_DECIMAL_SMALL_XY
+
 #if ENABLED(SDSUPPORT)
 
   // Some RAMPS and other boards don't detect when an SD card is inserted. You can work
@@ -525,8 +531,9 @@
 #if ENABLED(ENSURE_SMOOTH_MOVES)
   //#define ALWAYS_ALLOW_MENU      // If enabled, the menu will always be responsive.
                                    // WARNING: Menu navigation during short moves may cause stuttering!
-  #define LCD_UPDATE_THRESHOLD 170 // (ms) Minimum duration for the current segment to allow an LCD update.
+  #define LCD_UPDATE_THRESHOLD 135 // (ms) Minimum duration for the current segment to allow an LCD update.
                                    // Default value is good for graphical LCDs (e.g., REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER).
+                                   // You may try to lower this value until you printer starts stuttering again as if ENSURE_SMOOTH_MOVES is disabled.
   #define MIN_BLOCK_TIME 6         // (ms) Minimum duration of a single block. You shouldn't need to modify this.
 #endif
 
@@ -624,7 +631,7 @@
 
 // The ASCII buffer for serial input
 #define MAX_CMD_SIZE 96
-#define BUFSIZE 4
+#define BUFSIZE 16
 
 // Transfer Buffer Size
 // To save 386 bytes of PROGMEM (and TX_BUFFER_SIZE+3 bytes of RAM) set to 0.
@@ -633,7 +640,7 @@
 // For debug-echo: 128 bytes for the optimal speed.
 // Other output doesn't need to be that speedy.
 // :[0, 2, 4, 8, 16, 32, 64, 128, 256]
-#define TX_BUFFER_SIZE 0
+#define TX_BUFFER_SIZE 16
 
 // Enable an emergency-command parser to intercept certain commands as they
 // enter the serial receive buffer, so they cannot be blocked.

@@ -1,15 +1,4 @@
-/*
-* 2017
-* 
-* ARDUINO MEGA (ATmega 2560) MARLIN FIRMWARE
-* KT8 DUAL+ 3D Printer
-* 
-* Kunststoftechniek Groep KT8
-* Hogeschool Zuyd University of Applied Sciences 
-*
-*/
-/* 
- * 
+/**
  * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *

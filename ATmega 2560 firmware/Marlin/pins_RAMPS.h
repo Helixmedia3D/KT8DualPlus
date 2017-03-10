@@ -69,9 +69,9 @@
 //
 // Limit Switches
 //
-#define X_MIN_PIN           3
+#define X_MIN_PIN           2
 #ifndef X_MAX_PIN
-  #define X_MAX_PIN         2
+	#define X_MAX_PIN         3
 #endif
 #define Y_MIN_PIN          14
 #define Y_MAX_PIN          15
@@ -197,7 +197,9 @@
 //
 #define SDSS               53
 #define LED_PIN            13
+#define STAT_LED_RED_PIN	57
 
+#define STAT_LED_BLUE_PIN	1
 // Use the RAMPS 1.4 Analog input 5 on the AUX2 connector
 #define FILWIDTH_PIN        5   // Analog Input
 
