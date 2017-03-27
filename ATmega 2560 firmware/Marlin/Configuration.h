@@ -710,10 +710,10 @@
 // @section machine
 
 // Travel limits after homing (units are in mm)
-#define X_MIN_POS -41-9-2 //44//-36
+#define X_MIN_POS -48-14 //44//-36
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 189-9-2 //194
+#define X_MAX_POS 182-14 //194
 #define Y_MAX_POS 180
 #define Z_MAX_POS 180
 
@@ -802,7 +802,7 @@
 
   // Set the boundaries for probing (where the probe can reach).
   #define LEFT_PROBE_BED_POSITION -45 //-30
-  #define RIGHT_PROBE_BED_POSITION 178-55 //184-55
+  #define RIGHT_PROBE_BED_POSITION 178-55-10 //184-55
   #define FRONT_PROBE_BED_POSITION 5
   #define BACK_PROBE_BED_POSITION 170
 
