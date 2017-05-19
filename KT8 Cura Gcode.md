@@ -24,12 +24,12 @@ G1 Z15.0 F{travel_speed}
 T1
 M117 PRIMING NOZZLES
 G92 E0
-G1 F200 E30
+G1 F300 E120
 G92 E0
 G1 F200 E-{retraction_dual_amount}
 T0
 G92 E0
-G1 F200 E30
+G1 F300 E120
 G92 E0
 G1 F{travel_speed}
 M117 HEATING CHAMBER
@@ -62,7 +62,7 @@ M42 P5 S0 ;heated chamber off
 #####preSwitchExtruder.gcode
 ```Assembly
 G91
-G1 Z-10
+G1 Z+10
 G90
 ```
 
@@ -70,7 +70,7 @@ G90
 ```Assembly
 ;afterTn
 G91
-G1 Z+10
+G1 Z10
 G90
 ```
 
@@ -97,12 +97,12 @@ G1 Z15.0 F{travel_speed}
 T1
 M117 PRIMING NOZZLES
 G92 E0
-G1 F200 E30
+G1 F300 E120
 G92 E0
 G1 F200 E-{retraction_dual_amount}
 T0
 G92 E0
-G1 F200 E30
+G1 F300 E120
 G92 E0
 G1 F{travel_speed}
 M117 HEATING CHAMBER
