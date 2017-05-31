@@ -710,10 +710,10 @@
 // @section machine
 
 // Travel limits after homing (units are in mm)
-#define X_MIN_POS -48-14 //44//-36
+#define X_MIN_POS -(30+25+15))
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 182-14 //194
+#define X_MAX_POS (230+(30+25+15))
 #define Y_MAX_POS 180
 #define Z_MAX_POS 180
 
@@ -801,8 +801,8 @@
   #define ABL_GRID_POINTS_Y ABL_GRID_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
-  #define LEFT_PROBE_BED_POSITION -45 //-30
-  #define RIGHT_PROBE_BED_POSITION 178-55-10 //184-55
+  #define LEFT_PROBE_BED_POSITION  28 //(30+25+15))+28 // left == + offset
+  #define RIGHT_PROBE_BED_POSITION 175-28 // ((230-(30+25+15))-28) // Right == - offset
   #define FRONT_PROBE_BED_POSITION 5
   #define BACK_PROBE_BED_POSITION 170
 
@@ -860,7 +860,7 @@
 
 // Manually set the home position. Leave these undefined for automatic settings.
 // For DELTA this is the top-center of the Cartesian print volume.
-#define MANUAL_X_HOME_POS 182
+#define MANUAL_X_HOME_POS 230 //
 #define MANUAL_Y_HOME_POS -18
 #define MANUAL_Z_HOME_POS 0.0// Distance between the nozzle to printbed after homing
 
@@ -872,10 +872,10 @@
 // - If stepper drivers time out, it will need X and Y homing again before Z homing.
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing when homing all axes (G28).
 // - Prevent Z homing when the Z probe is outside bed area.
-#define Z_SAFE_HOMING   
+#define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
-  #define Z_SAFE_HOMING_X_POINT ((X_MAX_POS + (X_MIN_POS * -1 )) / 2)    // X point for Z homing when homing all axis (G28).
+  #define Z_SAFE_HOMING_X_POINT (175/2)+75 // X point for Z homing when homing all axis (G28).
   #define Z_SAFE_HOMING_Y_POINT ((Y_MIN_POS + Y_MAX_POS) / 2)    // Y point for Z homing when homing all axis (G28).
 #endif
 
