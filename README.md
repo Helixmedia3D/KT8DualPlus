@@ -1,20 +1,14 @@
 # KT8 Dual+ 3D printer
 Deze repository bevat alle belangrijke bestanden benodigd voor de KT8 Dual+.
 
-####KT08_DUAL+.ini
-Initialisatiebestand met printparameters voor Cura 15.04.6
+#### KT8 DUAL PLUS.fff
+Initialisatiebestand met printparameters voor Simplify3D
 
-####KT8 Cura Gcode.md
-Cura 15.04.6 Start/End-GCode
+#### KT8 Dual+ Handleiding.pdf
+Handleiding voor KT8 Dual+
 
-####KT8 Post-Postprocessor Instellingen.md
-Instellingen voor KT8 Post-Postprocessor applicatie
-
-####KT8 Dual+ Handleiding.pdf
-Handleiding voor KT8 Dual+ 
-
-####ATmega 2560 firmware
+#### ATmega 2560 firmware
 Marlin RC8
 
-####ATmega 328 firmware 
-Bestuurt verwarmde kamer van printer.
+#### ATmega 328 firmware 
+Bestuurt verwarmde kamer van printer
