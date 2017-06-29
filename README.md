@@ -6,6 +6,8 @@ Initialisatiebestand met printparameters voor Simplify3D.
 
 #### KT8 Dual+ Handleiding.pdf
 Handleiding voor KT8 Dual+. [I'm an inline-style link (https://drive.google.com/open?id=0B50UYnGibGrvVGJvZzFaTE5JRjA)
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
 
 #### ATmega 2560 firmware
 Marlin 1.1.3
